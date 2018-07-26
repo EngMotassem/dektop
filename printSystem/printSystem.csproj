@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C450ED77-2A4A-438C-8B51-1B6D1650E1E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>printSystem</RootNamespace>
+    <AssemblyName>printSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\AccountSoftware\AccountSoftware\AccountingSystem\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\EmployeeSystem\EmployeeSystem\bin\Debug\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\EmployeeSystem\EmployeeSystem\bin\Debug\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adabistatics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adabistatics.Designer.cs">
+      <DependentUpon>Adabistatics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaFormShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaFormShow.Designer.cs">
+      <DependentUpon>AreaFormShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataDataSet.cs">
+      <DependentUpon>dataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalFormmahder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finalFormmahder.Designer.cs">
+      <DependentUpon>finalFormmahder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatics.Designer.cs">
+      <DependentUpon>FormStatics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsMahader3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsMahader3.Designer.cs">
+      <DependentUpon>frmReportsMahader3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsMahader2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsMahader2.Designer.cs">
+      <DependentUpon>frmReportsMahader2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsWay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsWay.Designer.cs">
+      <DependentUpon>frmReportsWay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsMahader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsMahader.Designer.cs">
+      <DependentUpon>frmReportsMahader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsetting.Designer.cs">
+      <DependentUpon>frmsetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowareaCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowareaCollection.Designer.cs">
+      <DependentUpon>ShowareaCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showareassubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showareassubjects.Designer.cs">
+      <DependentUpon>showareassubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showareasubjectsDini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showareasubjectsDini.Designer.cs">
+      <DependentUpon>showareasubjectsDini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showStudentNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showStudentNames.Designer.cs">
+      <DependentUpon>showStudentNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="StaticofSubjectShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticofSubjectShow.Designer.cs">
+      <DependentUpon>StaticofSubjectShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staticsFormCollect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staticsFormCollect.Designer.cs">
+      <DependentUpon>staticsFormCollect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subjectnumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectnumbers.Designer.cs">
+      <DependentUpon>subjectnumbers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adabistatics.resx">
+      <DependentUpon>Adabistatics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreaFormShow.resx">
+      <DependentUpon>AreaFormShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finalFormmahder.resx">
+      <DependentUpon>finalFormmahder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatics.resx">
+      <DependentUpon>FormStatics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportsMahader3.resx">
+      <DependentUpon>frmReportsMahader3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportsMahader2.resx">
+      <DependentUpon>frmReportsMahader2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportsWay.resx">
+      <DependentUpon>frmReportsWay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportsMahader.resx">
+      <DependentUpon>frmReportsMahader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsetting.resx">
+      <DependentUpon>frmsetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RepEstlam.rdlc" />
+    <EmbeddedResource Include="ReportOfALLAReasCollection.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportOfAllSubjectsDini.rdlc" />
+    <EmbeddedResource Include="ReportOfStudentnames.rdlc" />
+    <EmbeddedResource Include="ShowareaCollection.resx">
+      <DependentUpon>ShowareaCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showareassubjects.resx">
+      <DependentUpon>showareassubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showareasubjectsDini.resx">
+      <DependentUpon>showareasubjectsDini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showStudentNames.resx">
+      <DependentUpon>showStudentNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportOfAllSubjects.rdlc" />
+    <EmbeddedResource Include="allstudent.rdlc" />
+    <EmbeddedResource Include="student of subject 01.rdlc" />
+    <EmbeddedResource Include="RepMahdar3.rdlc" />
+    <EmbeddedResource Include="RepMahdar2.rdlc" />
+    <EmbeddedResource Include="RepMahdar.rdlc" />
+    <EmbeddedResource Include="StaticofSubjectShow.resx">
+      <DependentUpon>StaticofSubjectShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staticsFormCollect.resx">
+      <DependentUpon>staticsFormCollect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticsReportareas.rdlc" />
+    <EmbeddedResource Include="StaticsReport.rdlc" />
+    <EmbeddedResource Include="RepPage.rdlc" />
+    <EmbeddedResource Include="subjectnumbers.resx">
+      <DependentUpon>subjectnumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dataDataSet.xsc">
+      <DependentUpon>dataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dataDataSet.xss">
+      <DependentUpon>dataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\سشسش.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
